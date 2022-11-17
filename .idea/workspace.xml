@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c06b744-d1fa-43ea-818e-2e716739c8dd" name="Changes" comment="">
+    <list default="true" id="4c06b744-d1fa-43ea-818e-2e716739c8dd" name="Changes" comment="Step 05 - Exploring Path Params and Path Variables with Spring Boot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thg/springboot/deepdiverestapi/helloworld/HelloWorldBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thg/springboot/deepdiverestapi/helloworld/HelloWorldBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thg/springboot/deepdiverestapi/helloworld/HelloWorldResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thg/springboot/deepdiverestapi/helloworld/HelloWorldResource.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +76,12 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showModules" value="false" />
+    <option name="showImplicitBeans" value="false" />
+    <option name="showInfrastructureBeans" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4c06b744-d1fa-43ea-818e-2e716739c8dd" name="Changes" comment="" />
@@ -87,8 +89,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668707530400</updated>
-      <workItem from="1668707532089" duration="3597000" />
+      <workItem from="1668707532089" duration="5925000" />
     </task>
+    <task id="LOCAL-00001" summary="Step 05 - Exploring Path Params and Path Variables with Spring Boot">
+      <created>1668720212456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668720212456</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +126,10 @@
         <entry key="97885ea5-976b-48b2-94de-da6a7038487f" value="TOOL_WINDOW" />
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Step 05 - Exploring Path Params and Path Variables with Spring Boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 05 - Exploring Path Params and Path Variables with Spring Boot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
