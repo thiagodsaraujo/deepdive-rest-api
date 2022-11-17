@@ -1,6 +1,11 @@
 package com.thg.springboot.deepdiverestapi.helloworld;
 
 public class HelloWorldBean {
-    public HelloWorldBean(String s) {
+
+    private String message;
+
+    public HelloWorldBean(String message) {
+        super();
+        this.message = message;
     }
 }
