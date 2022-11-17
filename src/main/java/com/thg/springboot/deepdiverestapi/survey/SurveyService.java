@@ -50,4 +50,25 @@ public class SurveyService {
         return optionalSurvey.get();
 
     }
+
+    public List<Question> retrieveAllSurveysQuestions(String surveyId) {
+        var survey = retrieveSurveyById(surveyId);
+        if (survey==null) return null;
+
+        return survey.getQuestions();
+
+    }
+
+    public Question retrieveSpecifySurveyQuestion(String surveyId, String questionsId) {
+        var surveysQuestions = retrieveAllSurveysQuestions(surveyId);
+
+        if (surveysQuestions==null) return null;
+
+        var optionalQuestion =
+                surveysQuestions.stream().filter(q -> q.getId().equalsIgnoreCase(questionsId)).findFirst();
+
+        if (optionalQuestion.isEmpty()) return null;
+
+        return optionalQuestion.get();
+    }
 }
