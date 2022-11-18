@@ -24,7 +24,7 @@ public class SurveyResource {
     }
 
     @RequestMapping("/surveys/{surveyId}")
-    public Survey retrieveAllSurveys(@PathVariable String surveyId){
+    public Survey retrieveSurveyById(@PathVariable String surveyId){
         var survey = surveyService.retrieveSurveyById(surveyId);
 
         if (survey == null){
@@ -71,6 +71,14 @@ public class SurveyResource {
         }
 
         return question;
+    }
+
+    @RequestMapping(value = "/surveys/{surveyId}/questions/{questionsId}", method = RequestMethod.DELETE)
+    public ResponseEntity<Object> deleteSurveyQuestion(
+            @PathVariable String surveyId,
+            @PathVariable String questionsId){
+        surveyService.deleteSurveyQuestion(surveyId, questionsId);
+        return ResponseEntity.noContent().build();
     }
 
 
