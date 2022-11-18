@@ -3,6 +3,8 @@ package com.thg.springboot.deepdiverestapi.survey;
 
 import org.springframework.stereotype.Service;
 
+import java.math.BigInteger;
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -70,5 +72,18 @@ public class SurveyService {
         if (optionalQuestion.isEmpty()) return null;
 
         return optionalQuestion.get();
+    }
+
+    public String addNewSurveysQuestions(String surveyId, Question question) {
+        var questionList = retrieveAllSurveysQuestions(surveyId);
+        question.setId(generateRandomId());
+        questionList.add(question);
+        return question.getId();
+    }
+
+    private String generateRandomId() {
+        SecureRandom secureRandom = new SecureRandom();
+        var randomId = new BigInteger(32, secureRandom).toString();
+        return randomId;
     }
 }

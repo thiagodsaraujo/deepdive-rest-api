@@ -3,11 +3,12 @@ package com.thg.springboot.deepdiverestapi.survey;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -44,6 +45,18 @@ public class SurveyResource {
         return questions;
     }
 
+    @RequestMapping(value = "/surveys/{surveyId}/questions",method = RequestMethod.POST )
+    public ResponseEntity<Object> addNewSurveysQuestions(@PathVariable String surveyId,
+                                                         @RequestBody Question question){
+        String questionId = surveyService.addNewSurveysQuestions(surveyId,question);
+
+        ///surveys/{surveyId}/add/questions/{questionId} vai retornar no id que criamos
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{questionId}").buildAndExpand(questionId).toUri();
+        return ResponseEntity.created(location).build();
+
+    }
+
 
     @RequestMapping("/surveys/{surveyId}/questions/{questionsId}")
     public Question retrieveSpecifySurveyQuestion(
@@ -59,5 +72,7 @@ public class SurveyResource {
 
         return question;
     }
+
+
 
 }
