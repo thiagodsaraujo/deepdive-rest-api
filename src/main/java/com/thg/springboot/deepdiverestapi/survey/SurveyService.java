@@ -101,4 +101,11 @@ public class SurveyService {
 
         return questionsId;
     }
+
+    public void updateSurveyQuestion(String surveyId, String questionsId, Question question) {
+        var surveysQuestions = retrieveAllSurveysQuestions(surveyId);
+        Predicate<Question> questionPredicate = q -> q.getId().equalsIgnoreCase(questionsId);
+        surveysQuestions.removeIf(questionPredicate);
+        surveysQuestions.add(question);
+    }
 }
