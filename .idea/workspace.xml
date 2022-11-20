@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c06b744-d1fa-43ea-818e-2e716739c8dd" name="Changes" comment="Step 13 - Implementing Spring Boot REST API Method to DELETE a Question">
+    <list default="true" id="4c06b744-d1fa-43ea-818e-2e716739c8dd" name="Changes" comment="Step 15 - Setting up Spring Boot Data JPA with H2 Database and User Entity">
+      <change beforePath="$PROJECT_DIR$/../../DataStructuresAlgorithms/EstruturaDeDados/Java-Data-Structures-and-Algorithms/.idea/Java-Data-Structures-and-Algorithms.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thg/springboot/deepdiverestapi/survey/SurveyResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thg/springboot/deepdiverestapi/survey/SurveyResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thg/springboot/deepdiverestapi/survey/SurveyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thg/springboot/deepdiverestapi/survey/SurveyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,25 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,7 +114,9 @@
       <updated>1668707530400</updated>
       <workItem from="1668707532089" duration="8281000" />
       <workItem from="1668777905239" duration="2747000" />
-      <workItem from="1668790556106" duration="3259000" />
+      <workItem from="1668790556106" duration="4387000" />
+      <workItem from="1668808561088" duration="959000" />
+      <workItem from="1668940946766" duration="2929000" />
     </task>
     <task id="LOCAL-00001" summary="Step 05 - Exploring Path Params and Path Variables with Spring Boot">
       <created>1668720212456</created>
@@ -123,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668793491611</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Step 15 - Setting up Spring Boot Data JPA with H2 Database and User Entity">
+      <created>1668794532989</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668794532989</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +187,8 @@
     <MESSAGE value="Step 10 - Exercise -Creating Survey Question related Spring Boot REST API Method" />
     <MESSAGE value="Step 12 - Improving POST Method - Status CREATED and Location Header" />
     <MESSAGE value="Step 13 - Implementing Spring Boot REST API Method to DELETE a Question" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 13 - Implementing Spring Boot REST API Method to DELETE a Question" />
+    <MESSAGE value="Step 15 - Setting up Spring Boot Data JPA with H2 Database and User Entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 15 - Setting up Spring Boot Data JPA with H2 Database and User Entity" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
