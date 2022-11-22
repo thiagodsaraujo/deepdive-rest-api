@@ -7,6 +7,7 @@ import com.thg.springboot.deepdiverestapi.survey.SurveyService;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
@@ -33,6 +34,7 @@ import static org.mockito.Mockito.when;
 
 //SurveyResource
 @WebMvcTest(controllers =  SurveyResource.class)
+@AutoConfigureMockMvc(addFilters = false)
 public class SurveyResourceTest {
 
     // Não iniciará nenhum outro bean que nao esteja aqui presente, só testaremos esse
